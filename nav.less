@@ -1,0 +1,83 @@
+@import 'variables.less';
+
+#content{
+	position: absolute;
+	top: @nav-height;
+	padding-top: 1em;
+	width: 100%
+}
+/*
+.container:first-of-type { 
+  background-color:yellow;
+  position: absolute;
+  top: @nav-height;
+  padding-top: 1em;
+  width: 100%;
+  min-height: 10em;	
+  display: block;
+}
+
+.container:first-of-type {
+	margin-top: @nav-height;
+	background-color:yellow;
+}
+*/
+
+#nav {
+	background-color: @nephritis;
+	border-bottom: 1px solid darken(@nephritis, 20%);  
+	position: fixed;
+	top:0;
+	display:inline-block;
+	
+	width: 100%;
+	z-index: 10;
+	min-height: @nav-height;
+	clear:both;
+	padding-bottom: 0;
+
+	ul {
+		margin: 0px;
+		// float: right;
+		width: 100%;
+
+	}
+	li {
+		padding-top:0.2em;
+		list-style: none;
+		display:inline-block;
+		margin: 0;
+		min-width: @nav-item-width; // 33%;
+		min-height: @nav-height;
+		float: left;
+		a {
+
+			color: white;
+		}
+		a:hover {
+			text-decoration: none;
+		}
+
+	}
+}
+
+.noti_container {
+    position:relative;    // This is crucial for the absolutely positioned element
+    width:16px;
+    height:16px;
+
+}
+.noti_bubble {
+    position:absolute;    /* This breaks the div from the normal HTML document. */
+    top: 2px;
+    right:-24px;
+    padding:1px 2px 1px 2px;
+    background-color:red; /* you could use a background image if you'd like as well */
+    color:white;
+    font-weight:bold;
+    font-size:0.35em;
+    min-width: 13px;
+    text-align: center;
+    border-radius:30px;
+    box-shadow:1px 1px 1px gray;
+}
