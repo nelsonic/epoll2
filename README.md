@@ -18,3 +18,14 @@ If you want to view/inspect the data in MongoDB here are two easy options:
 Remember to edit the config.js file and change the mongodb **port** to 
 **3002**
 
+### Deploying
+
+#### Modulus
+
+- https://modulus.io/codex/meteor_apps
+- http://blog.modulus.io/deploying-meteor-apps-on-modulus
+
+#### Heroku
+
+- Meteor deploy to heroku: http://stackoverflow.com/questions/17117965/how-to-deploy-meteor-0-6-0-to-heroku
+- http://bytesofpi.com/post/20898722298/pushing-your-meteor-project-to-heroku
